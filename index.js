@@ -22,7 +22,7 @@ passport.deserializeUser(function (user, done) {
   done(null, user);
 });
 mongoose.connect(
-  "mongodb+srv://contactpage:qwaszx78@cluster0.u84yf.mongodb.net/?retryWrites=true&w=majority",
+  {React_key_url_mongo}
   { useNewUrlparser: true }
 );
 app.set("view engine", "ejs");
